@@ -1,0 +1,216 @@
+
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*HEADER STYLES*/
+
+header{
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+}
+#logo{
+    float:left;
+    margin-right: 10px;
+    padding: 5px;
+    background: #fff;
+}
+#headerContent h1{
+    padding-top: 10px;
+    font-weight: bold;
+    color: black;
+
+}
+#headerContent{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    
+}
+#headerContent:after{
+    display: block;
+    content: '';
+    clear:both;
+
+}
+
+/*INFO STYLES*/
+#info{
+    margin-top: 80px;
+}
+#table, #input{
+    float:left;
+    box-sizing: border-box;
+}
+#table{
+    width: 50%;
+    padding: 1.5%;
+}
+.table{
+    font-size: 16px;
+    font-weight:bold;
+    
+}
+.table th{
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
+
+#input{
+    width: 50%;
+}
+#input-content{
+    text-align: center;
+    margin-top: 40px;
+}
+#input-content h2{
+    font-size: 28px;
+}
+
+#input-content input[type='text']{
+    width: 375px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+    top: 3px;
+    background: #F9F9F9;
+    color: #333;
+    text-align: center;
+    font-size: 20px;    
+}
+#input-content input:focus{
+    outline: 1px solid #999;
+}
+#input-content button{
+    border-radius: 0;
+    border: none;
+    padding: 14px;
+    background-color: orange;
+    color: #333;
+    font-weight: bold;
+    margin-left:0;    
+}
+#input-content form p{
+    color: orange;
+    font-size: 15px;
+    margin-top: 4px;
+    word-spacing: 4px;
+}
+#input-content input ~p{
+    height:0;
+    display:none;
+}
+#input-content input.invalid~p{
+    height: auto;
+    display: block;
+}
+#result{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+}
+#result p{
+    font-size: 18px;
+}
+#result span{
+    padding: 25px;
+    font-weight: bold;
+    background: #F9F9F9;
+    margin: 0 auto;
+    color: black;
+    font-size: 20px;
+    display:block;
+    
+}
+#info:after{
+    content: '';
+    display:block;
+    clear:both;
+}
+
+/*AD STYLES*/
+#ads{
+    height: 250px;
+    
+}
+/*FOOTER STYLES*/
+#footer{
+    color: #fff;
+    padding: 20px;
+    background: #333;
+    text-align: center;
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+#footer a{
+    color: orange;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 888px){
+   #input-content button{
+       margin-top: 10px;
+       width: 20%;
+   }
+}
+
+@media screen and (max-width: 768px){
+
+#headerContent h1{
+           font-size: 25px;
+           position: relative;
+           
+} 
+
+ #table{
+     display: none;
+
+ }
+
+#input{
+    float:none;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#input-content button{
+    margin-top: 0;
+    width: 55px;
+}
+#headerContent{
+    width: 50%;
+
+}
+
+}
+@media screen and (max-width: 536px){
+   #logo{
+       float:none;
+
+   }
+   #headerContent{
+       position:relative;
+       top: 20px;
+   }
+   #headerContent h1{
+       font-size: 20px;
+   }
+   #input-content h2{
+       font-size: 18px;
+   }
+#input{
+    padding: 0 5%;
+}
+
+@media screen and (max-width: 478px){
+    
+    #input-content button{
+        margin-top: 8px;
+    }
+}
